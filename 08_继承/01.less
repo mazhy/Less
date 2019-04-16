@@ -1,0 +1,25 @@
+.wrap {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 1px solid;
+  margin: 200px auto;
+}
+@import './extends.less';
+
+.wrap .inner {
+  /* 使用extend 来继承属性值,如果不写all只继承指定类的属性, 写all 继承所有(伪元素等) */
+  &:extend(.juzhong all);
+  &:nth-child(1){
+    width: 100px;
+    height: 100px;
+    background: pink;
+    z-index: -1;
+  }
+  &:nth-child(2){
+    width: 50px;
+    height: 50px;
+    background: green;
+    z-index: 0;
+  }
+}
