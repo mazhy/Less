@@ -1,0 +1,33 @@
+.wrap {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 1px solid;
+  margin: 200px auto;
+}
+.wrap .inner1 {
+  /* 引入混合代码 */
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: pink;
+  z-index: -1;
+}
+.wrap .inner2 {
+  /* 可以指定传入哪些参数 */
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: green;
+  z-index: 0;
+}
