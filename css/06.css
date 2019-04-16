@@ -1,0 +1,22 @@
+.wrap {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 1px solid;
+  margin: 200px auto;
+}
+.wrap .inner {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: green;
+  /* 在使用伪类选择器时,要加上& 要不然,会把它当成子元素处理=> .inner :hover, 不需要出现空格则用& */
+}
+.wrap .inner:hover {
+  background: deeppink;
+}
